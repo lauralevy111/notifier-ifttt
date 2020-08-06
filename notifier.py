@@ -206,7 +206,7 @@ def check_nhl():
             nhl_games[game_pk].away.last_score = game['teams']['away']['score']
             nhl_games[game_pk].home.in_power_play = game['linescore']['teams']['home']['powerPlay']
             nhl_games[game_pk].away.in_power_play = game['linescore']['teams']['away']['powerPlay']
-            # print(game['teams']['away']['team']['name'], game['teams']['away']['score'])
+             print(game['teams']['away']['team']['name'], game['teams']['away']['score'])
             # print(game['teams']['home']['team']['name'], game['teams']['home']['score'])
 
         for k in list(nhl_games.keys()):
